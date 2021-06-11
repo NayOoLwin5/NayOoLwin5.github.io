@@ -12,9 +12,8 @@ layout: full-width
     <div class="jumbotron" style="text-align: center;">
       <img class="author-profile-img" src="{{site.url}}{{site.baseurl}}/assets/img/Suman.jpg" />
       <p class="jumbotron-heading">Hi, I am {{site.author}} !</p>
+      <p class= "description">{{site.field}} </p>
       <p class="lead" id="typewriteText"></p>
-         {%- include github_star_button.html -%}
-         {%- include github_fork_button.html -%}
     </div>
     <div class="col-lg-8 offset-md-2">
       <section id="recent-articles">
@@ -42,6 +41,7 @@ layout: full-width
                       src="{{site.url}}{{site.baseurl}}/assets/img/authors/{{author_data.avatar}}"
                       width="50px"
                       height="50px"
+                      
                    />
                     {% endif %}
                   {% endif %}
