@@ -10,11 +10,16 @@ layout: default
       </a>
       <h1 class="profile-name">{{ site.title }}</h1>
       <p class="profile-bio">{{ site.subtitle }}</p>
-      {% if site.github_username %} {%
-      endif %}
 
       <p class="profile-links">
-        {% if site.Youtube_channel %}
+        {% if site.github_username %}
+        <a
+          class="social-link"
+          href="http://github.com/{{ site.github_username }}"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %} {% if site.Youtube_channel %}
         <a
           class="social-link"
           href="http://www.youtube.com/channel/{{ site.Youtube_channel }}"
