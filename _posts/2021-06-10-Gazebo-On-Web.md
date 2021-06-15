@@ -49,7 +49,7 @@ As one can see the thumbnail image, it is a single page localhost web-template c
 # Design Architecture {#header4}
 
 ## Tools used {#header5}
-- **Two [websocket connections](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/)** : **GUI websocket** for sending sensor data published from gzserver to gzweb (server to client) and **Code websocket** for user queries such as change in the sensor data, interfaces, etc (client to server). 
+- **Two [websocket connections](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/)** : **GUI websocket** for sending sensor data published from gzserver to gzweb (server to client), etc and **Code websocket** for user queries such as change in the sensor data, interfaces, etc (client to server). 
 - **Two python theads** : GUI thread for starting GUI websocket server and brain thread for Code websocket server along with their respective components 
 - **[Docker](https://www.docker.com/)** : We built a docker image contains all the dependencies for running the exercise and use it as server side to maintain minimal installation and set up a ready working environment for the user with a single command line. It is :- 
 ```bash
