@@ -50,7 +50,7 @@ As one can see the thumbnail image, it is a single page localhost web-template c
 
 ## Tools used {#header5}
 - **Two [websocket connections](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/)** : **GUI websocket** for sending sensor data published from gzserver to gzweb (server to client), etc and **Code websocket** for user queries such as change in the sensor data, interfaces, etc (client to server). 
-- **Two python theads** : GUI thread for starting GUI websocket server and brain thread for Code websocket server along with their respective components 
+- **Two python theads** : GUI thread for starting GUI websocket server and brain thread for Code websocket server along with their respective components. 
 - **[Docker](https://www.docker.com/)** : We built a docker image contains all the dependencies for running the exercise and use it as server side to maintain minimal installation and set up a ready working environment for the user with a single command line. It is :- 
 ```bash
 docker run -it -p 8080:8080 -p 2303:2303 -p 1905:1905 -p 8765:8765 -p 6080:6080 -p 1108:1108 jderobot/robotics-academy python3.8 manager.py
@@ -62,7 +62,7 @@ docker run -it -p 8080:8080 -p 2303:2303 -p 1905:1905 -p 8765:8765 -p 6080:6080 
     - Port 6080 for vnc viewer for Gazebo
     - Port 1108 for vnc viewer for console
 
-## Working principle on the server side {#header6}
+## Working principle on server side {#header6}
 ### Launch and world files {#header7}
 - It is suggested to run the launch file headless to be able to run Gzweb. Since the docker container handles a bundle of dependencies, running Gazebo GUI window inside the docker will consume too much CPU power.
 - By launching it, only gzserver will be running behind the scene along with master node and other nodes.
@@ -79,7 +79,7 @@ for the user to override the linear and angular velocities.
 ### map.py {#header10}
 - Map with robot location provided on the template to monitor the robot. 
 - I extracted x,y coordinates and yaw (angle of rotation plane) from `/taxi_holo/odom` topic from `HAL class` and converted them from world coordinates to map coordinates and used them on canvas element. 
-- Some components are needed to be translated from world coordinates to map coordinates and vice-versa. For those,  created built-in modules which does the function for the user. For all the built-in modules details, please refer [Ref 2](#header2)
+- Some components are needed to be translated from world coordinates to map coordinates and vice-versa. For those,  created built-in modules which do the function for the user. For all the built-in modules details, please refer [Ref 2](#header2)
  
 
 ### gui.py (GUI thread) {#header11}
