@@ -49,6 +49,7 @@ As one can see the thumbnail image, it is a single page localhost web-template c
 # Design Architecture {#header4}
 
 ## Tools used {#header5}
+- **[ROS-melodic(LTS)](http://wiki.ros.org/melodic/Installation/Ubuntu)** - It is main framework used for simulation environment.
 - **Two [websocket connections](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/)** : **GUI websocket** for sending sensor data published from gzserver to gzweb (server to client), etc and **Code websocket** for user queries such as change in the sensor data, interfaces, etc (client to server). 
 - **Two python theads** : GUI thread for starting GUI websocket server and brain thread for Code websocket server along with their respective components. 
 - **[Docker](https://www.docker.com/)** : We built a docker image contains all the dependencies for running the exercise and use it as server side to maintain minimal installation and set up a ready working environment for the user with a single command line. It is :- 
@@ -74,7 +75,7 @@ docker run -it -p 8080:8080 -p 2303:2303 -p 1905:1905 -p 8765:8765 -p 6080:6080 
 ### HAL.py (hardware abstratcion layer) {#header9}
 - From the master node, I take only two neccessary topics which are `/taxi_holo/odom` for the user to know robot position and `/taxi_holo/cmd_vel`
 for the user to override the linear and angular velocities. 
-- I subscribed to `/taxi_holo/odom` so that user get updated robot position messages continously and published `/taxi_holo/cmd_vel` and setting up linear and angular velocities to zero so that user can override any values they want to the message.
+- I subscribed to `/taxi_holo/odom` so that user gets updated robot position messages continously and published `/taxi_holo/cmd_vel` and setting up linear and angular velocities to zero so that user can override any values they want to the message.
 
 ### map.py {#header10}
 - Map with robot location provided on the template to monitor the robot. 
