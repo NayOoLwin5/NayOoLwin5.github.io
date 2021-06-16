@@ -59,7 +59,7 @@ docker run -it -p 8080:8080 -p 2303:2303 -p 1905:1905 -p 8765:8765 -p 6080:6080 
     - Port 8080 for Gzweb
     - Port 2303 for GUI websocket 
     - Port 1905 for Code websocket
-    - Port 8765 for manager.py for setting up ROS environment to specific chosen exercise
+    - Port 8765 for manager.py for setting up ROS environment for specific chosen exercise
     - Port 6080 for vnc viewer for Gazebo
     - Port 1108 for vnc viewer for console
 
