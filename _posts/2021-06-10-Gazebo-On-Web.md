@@ -80,7 +80,7 @@ for the user to override the linear and angular velocities.
 ### map.py {#header10}
 - Map with robot location provided on the template to monitor the robot. 
 - I extracted x,y coordinates and yaw (angle of rotation plane) from `/taxi_holo/odom` topic from `HAL class` and converted them from world coordinates to map coordinates and used them on canvas element. 
-- Some components are needed to be translated from world coordinates to map coordinates and vice-versa. For those,  created built-in modules which do the function for the user. For all the built-in modules details, please refer [Ref 2](#header2)
+- Some components are needed to be translated from world coordinates to map coordinates and vice-versa. For those,  created built-in modules which do the function for the user. For all the built-in modules details, please refer [Ref 1](#header2)
  
 
 ### gui.py (GUI thread) {#header11}
