@@ -28,7 +28,7 @@ permalink: /blog/ros-gazebo-on-web/
 
 # A quick overview {#header1} 
 
-This project is my internship work in [JdeRobot open source organization](https://jderobot.github.io/RoboticsAcademy/) which develops a collection of exercises and challenges to learn robotics in a practical way. The exercises mainly based on [ROS and Gazebo simulator](https://www.ros.org/). The organization develops software(ROS and Gazebo based exercises) with a main focus on educational impact on user who are keen on learning and testing different robotics algorithms for various scenarios. 
+This project is my internship work in [JdeRobot open source organization](https://jderobot.github.io/RoboticsAcademy/) which develops a collection of exercises and challenges to learn robotics in a practical way. The exercises mainly based on [ROS and Gazebo simulator](https://www.ros.org/). The organization develops software(ROS and Gazebo based exercises) with a main focus on educational impact on user who is keen on learning and testing different robotics algorithms for various scenarios. 
 
 For the user, this template comes with an ACE editor on which he/she writes algorithm in python and see simulation result. 
 
