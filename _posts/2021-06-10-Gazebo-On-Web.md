@@ -3,7 +3,7 @@ layout: post
 author: nayoolwin
 title: Integration of ROS and Gazebo on Web Application
 date: 2021-02-20
-thumbnail: /assets/img/web-template.png
+thumbnail: /assets/img/Global_navigation:2.4.3.png
 category: web development
 summary: A web based template for Global Navigation simulation for robotics enthusiasts
 keywords: ros and gazebo on web, gazebo web template, integration of ros and gazebo on web application, 
@@ -28,9 +28,11 @@ permalink: /blog/ros-gazebo-on-web/
 
 # A quick overview {#header1} 
 
-This project is my internship work in [JdeRobot open source organization](https://jderobot.github.io/RoboticsAcademy/) which develops a collection of exercises and challenges to learn robotics in a practical way. It includes exercises about drone programming, computer vision, mobile robots, autonomous cars, etc and all mainly based on [Gazebo simulator and ROS](https://www.ros.org/). The organization develops software(ROS and Gazebo based exercises) with a main focus on educational impact on users who are keen on learning and testing different robotics algorithms for various scenarios. 
+This project is my internship work in [JdeRobot open source organization](https://jderobot.github.io/RoboticsAcademy/) which develops a collection of exercises and challenges to learn robotics in a practical way. The exercises mainly based on [ROS and Gazebo simulator](https://www.ros.org/). The organization develops software(ROS and Gazebo based exercises) with a main focus on educational impact on user who are keen on learning and testing different robotics algorithms for various scenarios. 
 
-By the time I joined the organization, they were primarily working on new release 2.3 which is migrating all the available exercises to new web-templates paradigm. I decided to take on one of those exercises which is **Global Navigation** and it was quiet challenging for the migration. And I studied their open sourced [repository](https://github.com/JdeRobot/RoboticsAcademy) structure to better understand the source code. 
+For the user, this template comes with an ACE editor on which he/she writes algorithm in python and see simulation result. 
+
+By the time I joined the organization, they were primarily working on new release 2.3 which is migrating all the available exercises to new web-templates paradigm. I decided to take on one of those exercises which is **Global Navigation** and it was quiet challenging for the migration. Before I started, I studied their open sourced [repository](https://github.com/JdeRobot/RoboticsAcademy) structure to better understand the source code. 
 
 # Project references {#header2}
 
