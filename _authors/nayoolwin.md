@@ -3,7 +3,7 @@ name: Nay Oo Lwin
 username: nayoolwin
 site: https://nayoolwin.com
 avatar: Suman.jpg
-bio: "AI and ML explorer"
+bio: "Backend Devoloper"
 email: mail@suman.nay17half1999.com
 social:
     - title: "github"
