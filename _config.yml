@@ -1,7 +1,7 @@
 title: Nay Oo Lwin
 subtitle: Blogs about my work and personal projects 
 field: >-  # this means to ignore newlines until "baseurl:"
-           Backend Developer
+           Full Stack developer
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -21,8 +21,8 @@ author_logo: Suman.jpg
 author: Nay Oo Lwin
 
 
-author_email: "suman.nay17half1999@gmail.com"
-author_location: India
+author_email: "nayoolwinpersonal@gmail.com"
+author_location: Bangkok, Thailand
 typewrite-text: Here, blogs about my work and personal projects 
 # typewrite-text: Here, my blogs are about my internships and personal projects
 
